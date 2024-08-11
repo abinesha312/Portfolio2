@@ -3,26 +3,26 @@
     {
       "id": "1",
       "src": "./img/product-chain-1.png",
-      "title": "Front-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "title": "Front-End Expertise",
+      "description": "I excel in creating visually appealing and highly interactive user interfaces using Angular, React.js, and HTML, ensuring seamless and responsive designs."
     },
     {
       "id": "2",
       "src": "./img/tag-1.png",
-      "title": "Back-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "title": "Back-End Expertise",
+      "description": "I develop robust and scalable back-end solutions using C# and .NET Core, integrating seamlessly with front-end components for a smooth user experience."
     },
     {
       "id": "3",
       "src": "./img/feather-pen-2.png",
-      "title": "UI & UX Design",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "title": "Machine Learning Expertise",
+      "description": "I specialize in Large Language Models (LLM), Reinforcement Learning (RL), and Convolutional Neural Networks (CNN), developing advanced models for intelligent decision-making."
     },
     {
       "id": "4",
       "src": "./img/feather-pen-1.png",
-      "title": "Webflow Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "title": "Cloud-Based Development",
+      "description": "I design, deploy, and manage scalable applications on AWS, Azure, and Google Cloud, leveraging cloud services to optimize performance and enhance security."
     }
   ],
   "portfolio": [
