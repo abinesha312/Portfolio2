@@ -28,10 +28,10 @@
   "portfolio": [
     {
       "id": "1",
-      "src": "./img/placeholder-image.png",
-      "title": "Ahuse",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/ChainLit_ThumbNail.jpg",
+      "title": "Custom GPT ",
+      "description": "Build a GPT using  meta llama models, for the user Interface I have oppoted out for ChainLit and stored the data in the vector for using the Faiss vector database. ",
+      "link": "https://github.com/abinesha312/GPT_Llama2"
     },
     {
       "id": "2",

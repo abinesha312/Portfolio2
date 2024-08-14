@@ -5,18 +5,12 @@ export default function MyPortfolio() {
     <section className="portfolio--section" id="MyPortfolio">
       <div className="portfolio--container-box">
         <div className="portfolio--container">
-          <p className="sub--title">Recent Projects</p>
-          <h2 className="section--heading">My Portfolio</h2>
+          <h2 className="section--heading">Recent Projects</h2>
+          {/* <h2 className="section--heading">My Portfolio</h2> */}
         </div>
         <div>
-          <button className="btn btn-github">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 33 33"
-              fill="none"
-            >
+          <button className="btn btn-github" onClick={() => window.open("https://github.com/abinesha312")}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 33 33" fill="none" >
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -39,8 +33,20 @@ export default function MyPortfolio() {
                 <h3 className="portfolio--section--title">{item.title}</h3>
                 <p className="text-md">{item.description}</p>
               </div>
-              <p className="text-sm portfolio--link">
-                {item.link}
+              <a
+                className="text-sm portfolio--link"
+                href={item.link} // Use item.link from JSON to set the href dynamically
+                target="_blank"  // Optional: Opens the link in a new tab
+                rel="noopener noreferrer" // Optional: For security reasons when opening a new tab
+              >
+                View In Github
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 19" fill="none">
+                  <path d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z" stroke="currentColor"  strokeWidth="2.66667"
+                    strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </a>
+              {/* <p className="text-sm portfolio--link" href ="item.link">
+                View In Github
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -56,7 +62,7 @@ export default function MyPortfolio() {
                     stroke-linejoin="round"
                   />
                 </svg>
-              </p>
+              </p> */}
             </div>
           </div>
         ))}
