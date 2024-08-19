@@ -260,6 +260,7 @@ h2 {
 }
 .skills--section--card {
   display: flex;
+  min-height:520px;
   padding: 32px;
   flex-direction: column;
   align-items: flex-start;
