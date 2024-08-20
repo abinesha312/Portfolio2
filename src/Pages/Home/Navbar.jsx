@@ -34,9 +34,6 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
-      <div>
-        <img src="https://drive.google.com/file/d/1BMwvTDgi-_vQjhkYV7pENjRn8eSl0c0y/view?usp=sharing" alt="Logoipsum" />
-      </div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
         onClick={toggleNav}
@@ -72,11 +69,27 @@ function Navbar() {
               to="MyPortfolio"
               className="navbar--content"
             >
-              Portfolio
+              Projects
             </Link>
           </li>
           <li>
-            <Link
+          <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="testimonial"
+              className="navbar--content"
+            >
+              Skills
+            </Link>
+
+
+          </li>
+          <li>
+          <Link
               onClick={closeMenu}
               activeClass="navbar--active-content"
               spy={true}
@@ -88,20 +101,7 @@ function Navbar() {
             >
               About Me
             </Link>
-          </li>
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="testimonial"
-              className="navbar--content"
-            >
-              Testimonials
-            </Link>
+
           </li>
         </ul>
       </div>

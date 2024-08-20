@@ -747,3 +747,50 @@ input[type="checkbox"] {
 }
 
 /* Responsive Screens Ends*/
+
+.skills--section {
+  padding: 20px;
+}
+
+.skills--section--card {
+  margin-bottom: 40px;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.marquee--inner {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+.skill--item {
+  display: inline-block;
+  text-align: center;
+  width: 150px; /* Adjust based on your design */
+  margin-right: 20px;
+}
+
+.skill--item img {
+  max-width: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+.skill--item p {
+  margin-top: 10px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+

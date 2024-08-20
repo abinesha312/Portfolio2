@@ -1,0 +1,60 @@
+.skills--section {
+    padding: 20px; /* Padding around the entire section */
+    overflow: hidden;
+  }
+  
+  .marquee {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .marquee--inner {
+    display: flex;
+    width: calc(200%); /* Double the width for seamless animation */
+    animation: marquee 20s linear infinite;
+  }
+  
+  .skill--item {
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+    width: 120px; /* Fixed width for each skill item */
+    height: 150px; /* Fixed height for each skill item */
+    text-align: center;
+    padding: 10px; /* Padding inside each skill item */
+    box-sizing: border-box; /* Include padding in width/height */
+    margin: 0 10px; /* Margin between skill items */
+    background-color: #f9f9f9; /* Optional: background color for better visibility */
+    border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+  }
+  
+  .skill--item img {
+    width: 100%; /* Make image fill the width of the item */
+    height: 100%; /* Make image fill the height of the item */
+    object-fit: contain; /* Maintain aspect ratio while fitting */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensures the image behaves as a block element */
+  }
+  
+  .skill--item p {
+    margin-top: 23px;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Pause animation on hover */
+  .marquee:hover .marquee--inner {
+    animation-play-state: paused;
+  }
