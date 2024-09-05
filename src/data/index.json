@@ -30,22 +30,22 @@
       "id": "1",
       "src": "./img/ChainLit_ThumbNail.jpg",
       "title": "Custom GPT ",
-      "description": "Build a GPT using  meta llama models, for the user Interface I have oppoted out for ChainLit and stored the data in the vector for using the Faiss vector database. ",
+      "description": "Build a Custom GPT using  meta llama models, for the user Interface I have oppoted out for ChainLit and stored the data in the vector for using the Faiss vector database. ",
       "link": "https://github.com/abinesha312/GPT_Llama2"
     },
     {
       "id": "2",
       "src": "./img/placeholder-image-1.png",
-      "title": "App Dashboard",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "title": "Personaltiy Prediction using Myers Brige",
+      "description": "Created a BERT-based model to predict Myers-Briggs personality traits, integrating for efficient data storage and retrieval, optimizing scalability for large-scale analysis.",
+      "link": "https://github.com/abinesha312/PersonalityPrediction"
     },
     {
       "id": "3",
       "src": "./img/placeholder-image-2.png",
       "title": "Easy Rentn",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "link": "https://github.com/abinesha312/Angular_Upgrade_Tool"
     }
   ],
   "testimonial": [
@@ -72,6 +72,42 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
       "author_name": "Kathryn Murphy",
       "author_designation": "McDonald's"
+    }
+  ],
+    "education": [
+    {
+      "degree": "Master of Science",
+      "field": "Computer Science",
+      "dates": "Aug 2023 - May 2025",
+      "institution": "University of North Texas",
+      "location": "Denton, Texas (TX)"
+    },
+    {
+      "degree": "Bachelor of Technology",
+      "field": "Information Technology",
+      "dates": "Jul 2017 - Aug 2021",
+      "institution": "Panimalar Engineering College",
+      "location": "India"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Research & Development Assistantship",
+      "company": "University of North Texas",
+      "dates": "Oct 2023 - Present",
+      "location": "Denton, Texas (TX)"
+    },
+    {
+      "title": "Associate Software Developer",
+      "company": "TransUnion",
+      "dates": "Feb 2023 - Jul 2023",
+      "location": "Chennai, India"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Larsen and Toubro Infotech Mindtree",
+      "dates": "Oct 2021 - Feb 2023",
+      "location": "Chennai, India"
     }
   ]
 }
