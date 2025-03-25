@@ -1,23 +1,34 @@
+// src/Pages/Home/HeroSection.jsx
+import React from "react";
+import "./HeroSection.css"; // Create this file
+
 export default function HeroSection() {
   return (
-    <section id="heroSection" className="hero--section">
-      <div className="hero--section--content--box">
-        <div className="hero--section--content">
-          <p className="section--title">Hey, I'm Abinesh Haridoss</p>
-          <h1 className="hero--section--title">
-            <span className="hero--section-title--color">Software </span>{" "}
-            <br />
-            Developer
+    <section id="home" className="hero-section">
+      <div className="container hero-container">
+        <div className="hero-content">
+          <h1 className="hero-title">
+            Hi, I'm <span className="highlight">Abinesh Haridoss</span>
           </h1>
-          <p className="hero--section-description">
-          I transform complex problems into elegant, efficient solutions, 
-            <br /> always pushing the boundaries of innovation. Let's code the future together!
+          <h2 className="hero-subtitle">AI Full Stack Developer</h2>
+          <p className="hero-description">
+            I build beautiful and functional web experiences with modern technologies.
           </p>
+          <div className="hero-cta">
+            <a href="#contact" className="btn-primary">Get In Touch</a>
+            <a href="#portfolio" className="btn-secondary">View My Work</a>
+          </div>
         </div>
-        <button className="btn btn-primary">Get In Touch</button>
+        <div className="hero-image">
+          <div className="image-placeholder">
+            <img src="/img/AbineshHaridoss.jpg" alt="Abinesh Haridoss" />
+          </div>
+        </div>
       </div>
-      <div className="hero--section--img">
-        <img src="./img/hero_img.png" alt="Hero Section" />
+      <div className="hero-shapes">
+        <div className="shape shape-1"></div>
+        <div className="shape shape-2"></div>
+        <div className="shape shape-3"></div>
       </div>
     </section>
   );

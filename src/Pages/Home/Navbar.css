@@ -1,0 +1,190 @@
+/* src/Pages/Home/Navbar.css */
+
+
+.navbar {
+  background-color: #100f29; /* Deep purple-blue base color */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 15px 0;
+  overflow: hidden;
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right, 
+    rgba(41, 13, 82, 0.6) 0%, 
+    rgba(16, 15, 41, 0.6) 100%
+  );
+  backdrop-filter: blur(10px);
+  z-index: -2;
+}
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(#ffffff 1px, transparent 1px),
+    radial-gradient(#8a4fff 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 
+    0 0, 
+    25px 25px;
+  animation: moveStars 120s linear infinite;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+@keyframes moveStars {
+  0% {
+    background-position: 
+      0 0, 
+      25px 25px;
+  }
+  100% {
+    background-position: 
+      500px 500px, 
+      525px 525px;
+  }
+}
+
+/* Rest of your existing CSS remains the same */
+
+
+/* .navbar {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 15px 0;
+  overflow: hidden;
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      to right, 
+      rgba(41, 13, 82, 0.1) 0%, 
+      rgba(16, 15, 41, 0.1) 50%, 
+      rgba(16, 15, 41, 0.1) 100%
+  );
+  backdrop-filter: blur(10px);
+  z-index: -2;
+}
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+      radial-gradient(#ffffff 1px, transparent 1px),
+      radial-gradient(#ffffff 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 
+      0 0, 
+      25px 25px;
+  animation: moveStars 60s linear infinite;
+  opacity: 0.3;
+  z-index: -1;
+} */
+
+@keyframes moveStars {
+  0% {
+      background-position: 
+          0 0, 
+          25px 25px;
+  }
+  100% {
+      background-position: 
+          50px 50px, 
+          75px 75px;
+  }
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-items {
+  display: flex;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-items:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+  border-radius: 20px;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-items {
+      flex-direction: column;
+      background-color: rgba(16, 15, 41, 0.9);
+      width: 100%;
+      align-items: center;
+      position: fixed;
+      left: -100%;
+      transition: 0.3s;
+      top: 70px;
+      padding: 20px 0;
+  }
+  
+  .menu-items.active {
+      left: 0;
+  }
+
+  .hamburger {
+      display: block;
+      position: absolute;
+      right: 20px;
+  }
+}

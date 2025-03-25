@@ -1,19 +1,37 @@
+// src/Pages/Home/Education.jsx
+import React from "react";
 import data from "../../data/index.json";
+import { FaGraduationCap } from "react-icons/fa";
+import "./Education.css"; // We'll create this file next
 
 export default function MyEducation() {
   return (
-    <section className="education--section" id="myEducation">
-      <div className="education--container">
-        <p className="section--title">My Education</p>
-        <h2 className="education--section--heading">My Academic Background</h2>
-      </div>
-      <div className="education--section--container">
-        {data.education.map((item, index) => (
-          <div key={index} className="education--section--card">
-            <h3 className="education--section--title">{item.degree} in {item.field}</h3>
-            <p className="education--section--dates">{item.dates} at {item.institution}, {item.location}</p>
-          </div>
-        ))}
+    <section id="education" className="education-section">
+      <div className="container">
+        <h2 className="section-title">Education</h2>
+
+        <div className="education-timeline">
+          {data.education.map((item, index) => (
+            <div className="education-entry" key={index}>
+              <div className="education-icon">
+                <FaGraduationCap />
+              </div>
+
+              <div className="education-content">
+                <h3 className="education-degree">
+                  {item.degree} in <span className="education-field">{item.field}</span>
+                </h3>
+                <div className="education-details">
+                  <p className="education-institution">{item.institution}, {item.location}</p>
+                  <p className="education-dates">{item.dates}</p>
+                </div>
+                {item.description && (
+                  <p className="education-description">{item.description}</p>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

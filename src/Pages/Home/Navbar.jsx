@@ -1,124 +1,29 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+// src/Pages/Home/Navbar.jsx
+import React, { useState } from "react";
+import "./Navbar.css";
 
-function Navbar() {
-  const [navActive, setNavActive] = useState(false);
-
-  const toggleNav = () => {
-    setNavActive(!navActive);
-  };
-
-  const closeMenu = () => {
-    setNavActive(false);
-  };
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 500) {
-        closeMenu;
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (window.innerWidth <= 1200) {
-      closeMenu;
-    }
-  }, []);
+export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className={`navbar ${navActive ? "active" : ""}`}>
-      <a
-        className={`nav__hamburger ${navActive ? "active" : ""}`}
-        onClick={toggleNav}
-      >
-        <span className="nav__hamburger__line"></span>
-        <span className="nav__hamburger__line"></span>
-        <span className="nav__hamburger__line"></span>
-      </a>
-      <div className={`navbar--items ${navActive ? "active" : ""}`}>
-        <ul>
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="heroSection"
-              className="navbar--content"
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="MyPortfolio"
-              className="navbar--content"
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-          <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="testimonial"
-              className="navbar--content"
-            >
-              Skills
-            </Link>
+    <nav className="navbar">
+      <div className="navbar-container">
+        <div className={`menu-items ${isMenuOpen ? 'active' : ''}`}>
+          <a href="#home" className="nav-link">Home</a>
+          <a href="#about" className="nav-link">About</a>
+          <a href="#skills" className="nav-link">Skills</a>
+          <a href="#portfolio" className="nav-link">Portfolio</a>
+          <a href="#education" className="nav-link">Education</a>
+          <a href="#work" className="nav-link">Work</a>
+          <a href="#contact" className="nav-link">Contact</a>
+        </div>
 
-
-          </li>
-          <li>
-          <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="AboutMe"
-              className="navbar--content"
-            >
-              About Me
-            </Link>
-
-          </li>
-        </ul>
+        <div className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
       </div>
-      <Link
-        onClick={closeMenu}
-        activeClass="navbar--active-content"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        to="Contact"
-        className="btn btn-outline-primary"
-      >
-        Contact Me
-      </Link>
     </nav>
   );
 }
-
-export default Navbar;

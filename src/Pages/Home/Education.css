@@ -1,0 +1,125 @@
+/* src/Pages/Home/Education.css */
+.education-section {
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .section-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #8A2BE2 0%, #D4AF37 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .education-timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .education-timeline::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(to bottom, rgba(138, 43, 226, 0.7), rgba(212, 175, 55, 0.7));
+    left: 15px;
+    top: 0;
+  }
+  
+  .education-entry {
+    display: flex;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  
+  .education-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #D4AF37; /* Gold */
+    color: #0A0A1A; /* Very dark blue/black */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin-right: 1.5rem;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.7);
+  }
+  
+  .education-content {
+    background: rgba(26, 26, 47, 0.6);
+    border-radius: 8px;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    border-left: 3px solid #8A2BE2; /* Purple */
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .education-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+  }
+  
+  .education-degree {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #FFFFFF;
+  }
+  
+  .education-field {
+    background: linear-gradient(135deg, #8A2BE2 0%, #D4AF37 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .education-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    flex-wrap: wrap;
+  }
+  
+  .education-institution {
+    font-weight: 500;
+    margin: 0;
+    color: #AAAACC;
+  }
+  
+  .education-dates {
+    font-style: italic;
+    margin: 0;
+    color: #D4AF37; /* Gold */
+  }
+  
+  .education-description {
+    margin-top: 0.8rem;
+    line-height: 1.6;
+    color: #FFFFFF;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .education-details {
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+    
+    .section-title {
+      font-size: 2.5rem;
+    }
+    
+    .education-degree {
+      font-size: 1.25rem;
+    }
+  }

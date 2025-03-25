@@ -1,0 +1,78 @@
+/* src/Pages/Home/AnimatedBackground.css */
+.animated-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  background-color: var(--background);
+}
+
+.gradient-sphere {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+}
+
+.sphere-1 {
+  width: 600px;
+  height: 600px;
+  top: -100px;
+  left: -100px;
+  background: var(--primary);
+  animation: float 20s infinite alternate;
+}
+
+.sphere-2 {
+  width: 400px;
+  height: 400px;
+  bottom: -150px;
+  right: -100px;
+  background: var(--secondary);
+  animation: float 15s infinite alternate-reverse;
+}
+
+.sphere-3 {
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 60%;
+  background: var(--accent);
+  animation: float 18s infinite alternate;
+}
+
+.sphere-4 {
+  width: 200px;
+  height: 200px;
+  bottom: 10%;
+  left: 20%;
+  background: linear-gradient(var(--primary), var(--secondary));
+  animation: float 12s infinite alternate-reverse;
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(2px 2px at 20px 30px, #fff, rgba(0,0,0,0)),
+                    radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+                    radial-gradient(1px 1px at 90px 40px, #fff, rgba(0,0,0,0)),
+                    radial-gradient(1px 1px at 160px 120px, #fff, rgba(0,0,0,0)),
+                    radial-gradient(2px 2px at 230px 180px, #fff, rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 250px 250px;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(20px, 20px);
+  }
+}

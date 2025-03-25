@@ -1,23 +1,29 @@
-import AboutMe from "../AboutMe";
-import ContactMe from "../ContactMe";
-import Footer from "../Footer";
+// src/Pages/Home/Homescreen/index.jsx
+import React from "react";
+import AnimatedBackground from "../AnimatedBackground";
+import Navbar from "../Navbar";
 import HeroSection from "../HeroSection";
-import MyPortfolio from "../MyPortfolio";
+import AboutMe from "../AboutMe";
 import MySkills from "../MySkills";
-import Testimonial from "../Testimonials";
+import MyPortfolio from "../MyPortfolio";
 import Education from "../Education";
 import WorkExperience from "../Work";
+import Testimonial from "../Testimonials";
+import ContactMe from "../ContactMe";
+import Footer from "../Footer";
 
 export default function Home() {
   return (
     <>
+      <AnimatedBackground />
+      <Navbar />
       <HeroSection />
-      <MySkills />
       <AboutMe />
+      <MySkills />
       <MyPortfolio />
-      <Testimonial />
       <Education />
       <WorkExperience />
+      <Testimonial />
       <ContactMe />
       <Footer />
     </>

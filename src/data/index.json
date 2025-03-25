@@ -15,7 +15,7 @@
     {
       "id": "3",
       "src": "./img/feather-pen-2.png",
-      "title": "Machine Learning Expertise",
+      "title": "AI/ML Expertise",
       "description": "I specialize in Large Language Models (LLM), Reinforcement Learning (RL), and Convolutional Neural Networks (CNN), developing advanced models for intelligent decision-making."
     },
     {
@@ -28,24 +28,24 @@
   "portfolio": [
     {
       "id": "1",
-      "src": "./img/ChainLit_ThumbNail.jpg",
+      "src": "./img/01_GenAI_01.png",
       "title": "Custom GPT ",
       "description": "Build a Custom GPT using  meta llama models, for the user Interface I have oppoted out for ChainLit and stored the data in the vector for using the Faiss vector database. ",
       "link": "https://github.com/abinesha312/GPT_Llama2"
     },
     {
       "id": "2",
-      "src": "./img/placeholder-image-1.png",
+      "src": "./img/02_PP_02.png",
       "title": "Personaltiy Prediction using Myers Brige",
       "description": "Created a BERT-based model to predict Myers-Briggs personality traits, integrating for efficient data storage and retrieval, optimizing scalability for large-scale analysis.",
       "link": "https://github.com/abinesha312/PersonalityPrediction"
     },
     {
       "id": "3",
-      "src": "./img/placeholder-image-2.png",
-      "title": "Easy Rentn",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "https://github.com/abinesha312/Angular_Upgrade_Tool"
+      "src": "./img/01_EH_03.png",
+      "title": "EdgeHire",
+      "description": "EdgeHire AI tool mimics job interview It asks brief questions films your replies and transcribes them and gives rapid scores Use this to prep and learn to grow for jobs",
+      "link": "https://github.com/abinesha312/edgehire"
     }
   ],
   "testimonial": [
@@ -95,19 +95,37 @@
       "title": "Research & Development Assistantship",
       "company": "University of North Texas",
       "dates": "Oct 2023 - Present",
-      "location": "Denton, Texas (TX)"
+      "JObRole":"Researched AI, developed ChatGPT with LLaMA, optimized NVIDIA GPU performance.",
+      "location": "Denton, Texas (TX)",
+      "icon":"MdDeveloperBoard",
+      "iconstyle":"#5e3bee"
     },
     {
       "title": "Associate Software Developer",
       "company": "TransUnion",
       "dates": "Feb 2023 - Jul 2023",
-      "location": "Chennai, India"
+      "JObRole":"Developed Decision Edge app, optimized microservices, CI/CD pipeline, improved efficiency.",
+      "location": "Chennai, India",
+      "icon":"SiBmcsoftware",
+      "iconstyle":"#5e3bee"
     },
     {
       "title": "Software Engineer",
       "company": "Larsen and Toubro Infotech Mindtree",
       "dates": "Oct 2021 - Feb 2023",
-      "location": "Chennai, India"
+      "JObRole":"Developed PWA, optimized APIs, improved databases, and enhanced security measures.",
+      "location": "Chennai, India",
+      "icon":"MdOutlineDeveloperMode",
+      "iconstyle":"#5e3bee"
+    },
+    {
+      "title": "Full Stack Developer",
+      "company": "ProwessIQ Information Systems Pvt Ltd",
+      "dates": "Mar 2020 - Sept 2021",
+      "JObRole":"Developed PWA, optimized APIs, improved databases, and enhanced security measures.",
+      "location": "Chennai, India",
+      "icon":"MdOutlineDeveloperMode",
+      "iconstyle":"#5e3bee"
     }
   ]
 }
