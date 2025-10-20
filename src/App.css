@@ -10,13 +10,13 @@
   --black: #000000;
   --white: #ffffff;
   /* Add new colors for the enhanced design */
-  --bg-dark: #121212;
-  --bg-shade-dark: #1E1E1E;
+  --bg-dark: #ffffff;
+  --bg-shade-dark: #f5f5f5;
   --gold: #D4AF37;
   --gold-light: #F2E6C2;
   --purple: #6D44E5;
-  --text-light: #F5F5F5;
-  --text-muted: #AAAACC;
+  --text-light: #333333;
+  --text-muted: #666666;
 }
 
 body {
@@ -25,8 +25,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal;
-  background-color: var(--bg-dark);
-  color: var(--text-light);
+  background-color: #ffffff;
+  color: #333333;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -152,9 +152,9 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding: 15px 85px;
-  background: rgba(18, 18, 18, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   left: 0;
@@ -174,7 +174,7 @@ h3 {
 }
 
 .navbar--content {
-  color: var(--text-light);
+  color: #333333;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -537,7 +537,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding: 15px 85.333px;
-  background: #1c0041;
+  background: rgba(255, 255, 255, 0.95);
   box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
@@ -557,7 +557,7 @@ h3 {
 }
 /* Navbar Content */
 .navbar--content {
-  color: #ffffff;
+  color: #333333;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1078,7 +1078,7 @@ input[type="checkbox"] {
   display: block;
   height: 0.188rem;
   width: 100%;
-  background-color: #000000;
+  background-color: #333333;
   border-radius: 0.625rem;
   transition: all ease-in-out 0.2s;
 }
@@ -1260,10 +1260,10 @@ input[type="checkbox"] {
 :root {
   --primary: #8A2BE2;
   --secondary: #D4AF37;
-  --background: #0A0A1A;
-  --background-light: #1A1A2F;
-  --text: #FFFFFF;
-  --text-muted: #AAAACC;
+  --background: #ffffff;
+  --background-light: #f5f5f5;
+  --text: #333333;
+  --text-muted: #666666;
   --accent: #FF5555;
   --gradient-purple-gold: linear-gradient(135deg, #8A2BE2 0%, #D4AF37 100%);
   --gradient-purple-dark: linear-gradient(135deg, #8A2BE2 0%, #4A1080 100%);
@@ -1275,8 +1275,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: var(--background);
-  color: var(--text);
+  background-color: #ffffff;
+  color: #333333;
 }
 
 h1, h2, h3, h4, h5, h6 {
